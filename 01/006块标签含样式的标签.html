@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>块标签、含样式标签</title>
+</head>
+<body>
+    <p>
+        &nbsp;&nbsp;HTML是超文本标记语言，<br/>
+        很好学。
+        <p>
+        &nbsp;&nbsp;HTML是超文本标记语言，<br/>
+        很好学。
+        </p><!--不要这样的把p标签嵌套-->
+    </p>
+    <div> &nbsp;&nbsp;HTML是超文本标记语言，<br/>
+        很好学。
+    </div>
+<!--
+p标签带有样式的，两个p标签之间有空行，但是div标签不带样式，
+两个div标签之间不带空行，div可以嵌套，可以嵌套标题等
+span标签，表示一行里面的一小块内容，也没有具体的语义
+-->
+    <!--
+    em标签：行内标签，表示语气中的强调词,从浏览器查看变成了斜体
+    i标签：表示专业词汇,和em标签一样也是把文字变成了斜体
+    b：行内标签，表示文档中的关键字或者产品名,字体变成了加粗一点的字体
+    strong：行内标签，表示非常重要的内容,字体比b标签更粗一点o
+    -->
+    <div>
+        <h1>html概述</h1>
+    &nbsp;&nbsp;HTML是<i>超文本</i>标记<b>语言</b>，<br/>
+        <span><em>很</em>好学。</span>
+        <p>
+        &nbsp;&nbsp;<strong>HTML是超文本标记</strong>语言，<br/>
+        很好学。
+        </p>
+    </div>
+</body>
+</html>
