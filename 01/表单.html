@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <h1>注册表单</h1>
+    <form action="" method="post"><!--ａｃｔｉｏｎ里面写提交地址，如果不写，提交到本地,
+        method设置提交方式,前段提交之后工作就做完了，要是想得到表单需要后端-->
+        <p>
+            <label for="username2">用户名：</label> <!--ｆｏｒ和ｉｄ并用，这样点击ｌａｂｅｌ的时候，只要ｆｏｒ和ｉｄ的名字一样就可以激活框-->
+            <input type="text" name="username" id="username"/><!--单行文本输入-->
+        </p>
+
+        <p>
+            <label for="">密&nbsp&nbsp码：</label>
+            <input type="password" name="password" id="username2"/>
+        </p>
+
+        <div>
+            <label for="">性&nbsp&nbsp别:</label>
+            <input type="radio" name="gender" value="0"/>男
+            <input type="radio" name="gender" value="1"/>女<!--同一个name会互斥--><!--不同的ｎａｍｅ可以加到ｉｄ-->
+        </div>
+        <br>
+        <div>
+            <label for="">爱&nbsp&nbsp好</label><!--多选框-->
+            <input type="checkbox" name="aihao" value="sutuy">学习
+            <input type="checkbox" name="aihao" value="bas">打篮球
+            <input type="checkbox" name="aihao" value="python">python
+        </div>
+        <br>
+        <div>
+            <label for="">照&nbsp&nbsp片:</label><!--一般要设置ｖａｌｕｅ的值，这样在提交的时候我们才能ｇｅｔ到-->
+            <input type="file" name="image"><!--上传文件时-->
+            <!--<input type="image" name="">-->
+        </div>
+
+        <div>
+            <label for="">个人描述：</label>
+            <textarea name="self" id="dd" cols="30" rows="10"></textarea><!--多行文本输入框-->
+        </div>
+        <br>
+        <div>
+            <label for="">籍&nbsp&nbsp贯</label><!--下拉控件-->
+            <select name="location" id="">
+                <option value="0">北京</option>
+                <option value="1">上海</option>
+                <option value="2">河北</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <!--提交表单-->
+            <input type="submit" src="../images/2.jpg">
+            <input type="reset" value="重置你写的东西">
+        </div>
+
+    </form>
+</body>
+</html>
